@@ -1,1 +1,1 @@
-console.log('PR being opened should trigger next stage');
+console.log('I work on things');
