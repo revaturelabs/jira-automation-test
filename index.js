@@ -1,1 +1,1 @@
-console.log('Include both to see if it will work woops wrong #');
+console.log('Test the classic project');
