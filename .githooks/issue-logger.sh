@@ -8,5 +8,5 @@ read ISSUE_KEY
 TRIMMED=$(echo $ISSUE_KEY | sed -e 's:^\([^-]*-[^-]*\)-.*:\1:' -e \
     'y/abcdefghijklmnopqrstuvwxyz/ABCDEFGHIJKLMNOPQRSTUVWXYZ/')
 
-sed -i '1s/^/# THE TEXT BELLOW SHOULD BE THE START OF YOUR TITLE\n /' $1
-sed -i.bak -e "2s/^/$TRIMMED /" $1
+sed -i.bak -e "1s/^/$TRIMMED/" $1
+sed -i '2s/^/# THE TEXT BELLOW SHOULD BE THE START OF YOUR TITLE\n/' $1
