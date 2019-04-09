@@ -9,4 +9,4 @@ TRIMMED=$(echo $ISSUE_KEY | sed -e 's:^\([^-]*-[^-]*\)-.*:\1:' -e \
     'y/abcdefghijklmnopqrstuvwxyz/ABCDEFGHIJKLMNOPQRSTUVWXYZ/')
 
 sed -i.bak -e "1s/^/$TRIMMED/" $1
-sed -i '2s/^/# THE TEXT BELLOW SHOULD BE THE START OF YOUR TITLE\n\n/' $1
+sed -i '2s/^/# DO NOT REMOVE THE ISSUE KEY FROM ABOVE WRITE THE TITTLE OF YOUR COMMIT AFTER THE ISSUE KEY (SEPERATED BY A SPACE)\n\n/' $1
