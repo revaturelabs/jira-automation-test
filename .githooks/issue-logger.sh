@@ -8,4 +8,5 @@ read ISSUE_KEY
 TRIMMED=$(echo $ISSUE_KEY | sed -e 's:^\([^-]*-[^-]*\)-.*:\1:' -e \
     'y/abcdefghijklmnopqrstuvwxyz/ABCDEFGHIJKLMNOPQRSTUVWXYZ/')
 
+sed -i.bak -e "1s/^/"# DO NOT DELETE THE ISSUE KEY THAT HAS BEEN ENTERED" /" $1
 sed -i.bak -e "1s/^/$TRIMMED /" $1
